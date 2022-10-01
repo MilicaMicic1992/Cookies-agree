@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accept Cookie Dialog </title>
+    <style>
+        #cookie_window{
+            background-color: #212121;
+            color: white;
+            padding: 20px;
+        }
+        #agree{
+            background-color: green;
+            color: white;
+            border: 1px solid darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    <div id="cookie_window">
+        <p>This site using cookies. Click agree to keep using site.</p>
+        <button id="agree">Agree</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script>
+        const $btn_agree = $("#agree")
+        $btn_agree.on("click", function() { $(this).parent().slideUp(1000)})
+    </script>
+
+</body>
+</html>
